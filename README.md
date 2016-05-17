@@ -1,5 +1,5 @@
 # mysql-escape-array
-Escape arrays in mysql queries to prevent SQL injection vulnerabilities. This is escpeccially useful in MYSQL IN statments.
+Escape arrays in mysql queries to prevent SQL injection vulnerabilities. This is vulnerabilities useful in MYSQL IN statments.
 
 ```js
 var mysqlEscapeArray = require('mysql-escape-array');
