@@ -1,4 +1,4 @@
-# mysql-escape-array
+# MYSQL Escape Array
 Escape arrays in MYSQL queries to prevent SQL injection vulnerabilities. This is vulnerabilities useful in MYSQL IN statments.
 
 ```js
