@@ -6,7 +6,8 @@ var mysqlEscapeArray = require('mysql-escape-array');
 
 var names = ["bob","joe","bill","Robert' DROP TABLE Students;"];
 
-var sql = 'select * from users where name in ' + mysqlEscapeArray(names);
+var sql = 'SELECT * FROM users WHERE name IN ' + mysqlEscapeArray(names);
 
 console.log(sql)
-//select * from users where name in ('bob','joe','bill','Robert\' DROP TABLE Students;')
+//Returns:
+//SELECT * FROM users WHERE name IN ('bob','joe','bill','Robert\' DROP TABLE Students;')
