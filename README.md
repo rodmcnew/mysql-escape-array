@@ -5,6 +5,7 @@ Escape arrays in mysql queries to prevent SQL injection vulnerabilities. This is
 var mysqlEscapeArray = require('mysql-escape-array');
 
 var names = ["bob","joe","bill","Robert' DROP TABLE Students;"];
+
 var sql = 'select * from users where name in ' + mysqlEscapeArray(names);
 
 console.log(sql)
