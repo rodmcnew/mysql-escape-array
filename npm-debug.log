@@ -41,13 +41,13 @@
 18 silly publish   repository:
 18 silly publish    { type: 'git',
 18 silly publish      url: 'https://github.com/rodmcnew/mysql-escape-array.git' },
-18 silly publish   readme: '# mysql-escape-array\nEscape arrays in mysql queries to prevent SQL injection vulnerabilities. This is vulnerabilities useful in MYSQL IN statments.\n\n```js\nvar mysqlEscapeArray = require(\'mysql-escape-array\');\n\nvar names = ["bob","joe","bill","Robert\' DROP TABLE Students;"];\n\nvar sql = \'SELECT * FROM users WHERE name IN \' + mysqlEscapeArray(names);\n\nconsole.log(sql)\n//SELECT * FROM users WHERE name IN (\'bob\',\'joe\',\'bill\',\'Robert\\\' DROP TABLE Students;\')\n',
+18 silly publish   readme: '# mysql-escape-array\nEscape arrays in mysql queries to prevent SQL injection vulnerabilities. This is vulnerabilities useful in MYSQL IN statments.\n\n```js\nvar mysqlEscapeArray = require(\'mysql-escape-array\');\n\nvar names = ["bob", "joe", "bill", "Robert\' DROP TABLE Students;"];\n\nvar sql = \'SELECT * FROM users WHERE name IN \' + mysqlEscapeArray(names);\n\nconsole.log(sql)\n//SELECT * FROM users WHERE name IN (\'bob\',\'joe\',\'bill\',\'Robert\\\' DROP TABLE Students;\')\n',
 18 silly publish   readmeFilename: 'README.md',
-18 silly publish   gitHead: 'a266e914d127fef73c0bef6bfe6f68e2f3b57b43',
+18 silly publish   gitHead: '7df3962db290100bbc2177ed12679d8cb901e038',
 18 silly publish   bugs: { url: 'https://github.com/rodmcnew/mysql-escape-array/issues' },
 18 silly publish   homepage: 'https://github.com/rodmcnew/mysql-escape-array',
 18 silly publish   _id: 'mysql-escape-array@1.0.5',
-18 silly publish   _shasum: '2ea53e43df7a03cda0d5d1ee0b09314c25e09ee2',
+18 silly publish   _shasum: 'ef5e1213add2a3f3ccff720851137330a37c9b4b',
 18 silly publish   _from: '.' }
 19 silly mapToRegistry name mysql-escape-array
 20 silly mapToRegistry using default registry
@@ -57,22 +57,22 @@
 24 silly publish uploading /Users/rmcnew/.npm/mysql-escape-array/1.0.5/package.tgz
 25 verbose request uri https://registry.npmjs.org/mysql-escape-array
 26 verbose request sending authorization for write operation
-27 info attempt registry request try #1 at 16:01:02
+27 info attempt registry request try #1 at 16:02:25
 28 verbose request using bearer token for auth
-29 verbose request id cb9648ba02f98a07
+29 verbose request id 3f5d9839e4c35c98
 30 http request PUT https://registry.npmjs.org/mysql-escape-array
 31 http 403 https://registry.npmjs.org/mysql-escape-array
 32 verbose headers { 'content-type': 'application/json',
 32 verbose headers   'cache-control': 'max-age=300',
 32 verbose headers   'content-length': '95',
 32 verbose headers   'accept-ranges': 'bytes',
-32 verbose headers   date: 'Tue, 17 May 2016 21:00:48 GMT',
+32 verbose headers   date: 'Tue, 17 May 2016 21:02:11 GMT',
 32 verbose headers   via: '1.1 varnish',
 32 verbose headers   connection: 'keep-alive',
-32 verbose headers   'x-served-by': 'cache-ord1729-ORD',
+32 verbose headers   'x-served-by': 'cache-dfw1845-DFW',
 32 verbose headers   'x-cache': 'MISS',
 32 verbose headers   'x-cache-hits': '0',
-32 verbose headers   'x-timer': 'S1463518847.652400,VS0,VE746',
+32 verbose headers   'x-timer': 'S1463518930.569973,VS0,VE770',
 32 verbose headers   vary: 'Accept-Encoding' }
 33 verbose request invalidating /Users/rmcnew/.npm/registry.npmjs.org/mysql-escape-array on PUT
 34 error publish Failed PUT 403
