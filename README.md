@@ -12,4 +12,4 @@ console.log(sql)
 //SELECT * FROM users WHERE name IN ('bob','joe','bill','Robert\' DROP TABLE Students;')
 ```
 
-(https://www.npmjs.com/package/mysql-escape-array)
+https://www.npmjs.com/package/mysql-escape-array
