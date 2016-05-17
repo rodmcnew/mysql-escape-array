@@ -19,5 +19,9 @@
   "license": "ISC",
   "dependencies": {
     "mysql": ">=1.*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodmcnew/mysql-escape-array.git"
   }
 }
