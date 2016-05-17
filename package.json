@@ -1,6 +1,6 @@
 {
   "name": "mysql-escape-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Escape arrays in mysql queries to prevent SQL injection vulnerabilities. This is escpeccially useful in MYSQL IN statments.'",
   "main": "index.js",
   "scripts": {
