@@ -7,11 +7,11 @@ var mysql = require('mysql');
  * @returns {string} escaped array with parentheses arround it
  */
 module.exports = function (array) {
-    var escapedInStatement = '';
+    var escapedArray = '';
     var comma = '';
     array.forEach(function (value) {
-        escapedInStatement += comma + mysql.escape(value);
+        escapedArray += comma + mysql.escape(value);
         comma = ',';
     });
-    return '(' + escapedInStatement + ')';
+    return '(' + escapedArray + ')';
 };
