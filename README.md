@@ -3,7 +3,9 @@ Escape arrays in mysql queries to prevent SQL injection vulnerabilities. This is
 
 ```js
 var mysqlEscapeArray = require('mysql-escape-array');
+
 var names = ["bob","joe","bill","Robert' DROP TABLE Students;"];
 var sql = 'select * from users where name in ' + mysqlEscapeArray(names);
+
 console.log(sql)
 //Returns: select * from users where name in ('bob','joe','bill','Robert\' DROP TABLE Students;')
