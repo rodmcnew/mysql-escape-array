@@ -1,0 +1,23 @@
+{
+  "name": "mysql-escape-array",
+  "version": "1.0.0",
+  "description": "Escape arrays before putting them in mysql queries like 'where id in (3421, 6789, 6754)'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mysql",
+    "escape",
+    "array",
+    "sanitize",
+    "sql",
+    "injection",
+    "protection"
+  ],
+  "author": "Rod McNew",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": ">=1.*"
+  }
+}
