@@ -1,5 +1,5 @@
 # mysql-escape-array
-Escape arrays before putting them in mysql queries like 'where id in (3421, 6789, 6754)
+Escape arrays in mysql queries to prevent SQL injection vulnerabilities. This is escpeccially useful in MYSQL IN statments.
 
 ```js
 var mysqlEscapeArray = require('mysql-escape-array');
