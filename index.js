@@ -7,6 +7,9 @@ var mysql = require('mysql');
  * @returns {string} escaped array with parentheses around it
  */
 module.exports = function (array) {
+    if (!Array.isArray(array)) {
+        array = array.split(',')
+    }
     var escapedArray = '';
     var comma = '';
     array.forEach(function (value) {
